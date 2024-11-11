@@ -60,9 +60,10 @@ php artisan serve
 
 - `POST` `http://127.0.0.1:8000/api/register` // Registrar um usuário
 - `POST` `http://127.0.0.1:8000/api/login` // Logar com um usuário
-- `POST` `http://127.0.0.1:8000/api/logout` // Deslogar do usuário
 
 ### Após Login
+
+- `POST` `http://127.0.0.1:8000/api/logout` // Deslogar do usuário
 
 - `GET` `http://127.0.0.1:8000/api/user` // Listar todos os usuários
 - `GET` `http://127.0.0.1:8000/api/user/{id}` // Obter usuário específico
