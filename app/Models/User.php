@@ -12,13 +12,15 @@ class User extends Authenticatable implements JWTSubject
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
+    
+    protected $table = 'tb_user';
+    
+    protected $primaryKey = 'id';
+    
+    public $timestamps = true;
 
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
-
-    protected $table = 'tb_user';
-
-    protected $primaryKey = 'id';
 
     /**
      * The attributes that are mass assignable.
